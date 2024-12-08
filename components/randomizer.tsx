@@ -52,7 +52,7 @@ export default function Randomizer() {
       setResult(null)
       const duration = getMysteryDuration(mysteryLevel)
       const interval = 50 // Change item every 50ms
-      let startTime = Date.now()
+      const startTime = Date.now()
 
       const animate = () => {
         const elapsedTime = Date.now() - startTime
